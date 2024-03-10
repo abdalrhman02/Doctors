@@ -1,0 +1,34 @@
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 4em
+}
+
+.options div {
+    text-align: center;
+    margin-top: 4em
+}
+.options div h3 {
+    font-size: 25px
+}
+.options div select {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.doctorCard .details .session h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.doctorsInAreas {
+
+}
+.doctorsInAreas .dGroup {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+

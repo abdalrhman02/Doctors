@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inner Peace - Our Doctors</title>
+        <link rel="icon" href="../../Images/logo.png">
+        <link rel="stylesheet" href="../../Styles/global-rules.css">
+        <link rel="stylesheet" href="../../Styles/home.css">
+        <link rel="stylesheet" href="../../Styles/doctorsList.css">
+
+        <style>
+            .container {
+                flex-wrap: wrap;
+            }
+        </style>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
+
+    <body style="font-family:Arimo">
+        <header>
+            <div class="container">
+                <div class="left">
+                    <div class="logo">
+                        <img src="../../Images/logo.png" />
+                    </div>
+    
+                    <nav>
+                        <ul>
+                            <a href="home.html"><li>העמוד הראשי</li></a>
+                            <a href="doctorslist.html"><li>רופאים</li></a>
+                            <a href="diseases.html"><li>הפצת מחלות</li></a>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <div class="right">
+                    <div class="changeLang">
+                        <img src="../../Images/icons/global.png" id="langIcon" />
+                        <div class="langs disNone" id="langs">
+                            <a href="../English/doctorslist.html"><button>English</button></a>
+                            <a href="#"><button>עִברִית</button></a>
+                        </div>
+                    </div>
+    
+                    <a href="login.html"><button class="signinBtn btn">Sign in</button></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="doctors">
+            
+            <div class="title">
+                <h2>רופאים זמינים כרגע</h2>
+                <p>פנו לאחד הרופאים שתבחרו ותיהנו ממסע טיפולי נוח</p>
+            </div>
+
+            <div class="options">
+                <div class="area">
+                    <h3>בחר את האזור שלך:</h3>
+                    <select id="areas" onchange="handleSelectChange(this)">
+                        <option value="north">מחוז צפון</option>
+                        <option value="haifa">מחוז חיפה</option>
+                        <option value="central">מחוז מרכז</option>
+                        <option value="telaviv">מחוז תל אביב</option>
+                        <option value="jerusalem">מחוז ירושלים</option>
+                    </select>
+                </div>
+
+                <div class="price">
+                    <h3>מחיר:</h3>
+                    <select id="price" onchange="handlePriceChange(this)">
+                        <option value="htl">גבוה יותר לנמוך</option>
+                        <option value="lth">נמוך לגבוה יותר</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="doctorsInAreas">
+                    <div class="north dGroup">
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor3.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">ד"ר בסמה</h3>
+                                <h4 class="place">חבל עכו - כרמיאל</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                </div>
+        
+                                <a href="../Hebrew/DoctorsPages/Doctor3.html"><button class="btn">More</button></a>
+                            
+                                                       
+                                <div class="session">
+                                    <p>מושב</p>
+                                    <h4><p>35</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor1.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">ד"ר אחמד</h3>
+                                <h4 class="place">עכו - אזור נהריה</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                </div>
+        
+                                <a href="../Hebrew/DoctorsPages/Doctor1.html"><button class="btn">More</button></a>
+                            
+                                                       
+                                <div class="session">
+                                    <p>מושב</p>
+                                    <h4><p>50</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor2.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">ד"ר סאלם</h3>
+                                <h4 class="place">יזרעאל - נצרת-טירן</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                </div>
+        
+                                <a href="../Hebrew/DoctorsPages/Doctor2.html"><button class="btn">More</button></a>
+                           
+                                <div class="session">
+                                    <p>מושב</p>
+                                    <h4><p>60</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="haifa dGroup">              
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor4.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">ד"ר חאלד</h3>
+                                <h4 class="place">אזור חדרהn</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                </div>
+        
+                                <a href="#"><button class="btn">יותר</button></a>
+                            
+                                <div class="session">
+                                    <p>מושב</p>
+                                    <h4><p>45</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor5.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">ד"ר מנאל</h3>
+                                <h4 class="place">חיפה - אזור חיפה</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/white-star.png" />
+                                </div>
+        
+                                <a href="#"><button class="btn">יותר</button></a>
+                            
+                                <div class="session">
+                                    <p>מושב</p>
+                                    <h4><p>50</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="central dGroup">
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor6.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">ד"ר מוחמד</h3>
+                                <h4 class="place">רמלה</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                </div>
+        
+                                <a href="#"><button class="btn">יותר</button></a>
+                            
+                                <div class="session">
+                                    <p>מושב</p>
+                                    <h4><p>50</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor7.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">ד"ר קמל</h3>
+                                <h4 class="place">רמלה</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/white-star.png" />
+                                </div>
+        
+                                <a href="#"><button class="btn">יותר</button></a>
+                            
+                                <div class="session">
+                                    <p>מושב</p>
+                                    <h4><p>70</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor8.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">ד"ר רניה</h3>
+                                <h4 class="place">פתח תקווה</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/white-star.png" />
+                                </div>
+        
+                                <a href="#"><button class="btn">יותר</button></a>
+                            
+                                <div class="session">
+                                    <p>מושב</p>
+                                    <h4><p>80</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="telaviv dGroup">
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor9.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">ד"ר דוניה</h3>
+                                <h4 class="place">אזור רמת גן</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                </div>
+        
+                                <a href="#"><button class="btn">יותר</button></a>
+                           
+                                <div class="session">
+                                    <p>מושב</p>
+                                    <h4><p>35</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor10.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">ד"ר ג'מאל</h3>
+                                <h4 class="place">אזור תל אביב</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/white-star.png" />
+                                </div>
+        
+                                <a href="#"><button class="btn">יותר</button></a>
+                            
+                                <div class="session">
+                                    <p>מושב</p>
+                                    <h4><p>50</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="jerusalem dGroup">
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor11.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">ד"ר רני</h3>
+                                <h4 class="place">אזור חדרה</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                </div>
+        
+                                <a href="#"><button class="btn">יותר</button></a>
+                            
+                                <div class="session">
+                                    <p>מושב</p>
+                                    <h4><p>50</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="left">
+                    <h1>Inner Peace</h1>
+                    <p>כל הזכויות שמורות ל 212015739-324991892-214534802-325487650</p>
+                </div>
+
+                <div class="right">
+                    <h3>עקבו אחר החדשות שלנו מעת לעת</h3>
+                    <input type="email" placeholder="האימייל שלך כאן" />
+                    <button class="btn" id="subBtn">תשלח</button>
+                </div>
+            </div>
+
+            <div id="emailSub">
+                <img src="../../images/icons/close.png" id="emailSubClose"/>
+                <h2>תודה שנרשמת!</h2>
+                <p>החדשות וההצעות החדשות שלנו יישלחו למייל שלך מעת לעת</p>
+            </div>
+        </footer>
+    </body>
+
+    <script>
+                // Change Areas In Doctors List
+                let chooseArea = document.getElementById('areas');
+        let doctorsArea = document.querySelectorAll('.doctorsInAreas .dGroup');
+
+        doctorsArea[0].style.display = 'flex'
+
+        function handleSelectChange(selectElement) {
+            const selectedValue = selectElement.value;
+            
+            doctorsArea.forEach((gr) => {
+                if(gr.classList.contains(selectedValue)) {
+                    gr.style.display = 'flex';
+                } else {
+                    gr.style.display = 'none';
+                }
+            })
+        }
+
+        // Change Language
+        let langIcon = document.getElementById('langIcon');
+        let langsDiv = document.getElementById('langs');
+
+        langIcon.addEventListener('click', () => {
+        if(langsDiv.classList.contains('disNone')) {
+            langsDiv.classList.remove('disNone')
+            langsDiv.classList.add('disFlex')
+        } else if(langsDiv.classList.contains('disFlex')) {
+            langsDiv.classList.add('disNone')
+            langsDiv.classList.remove('disFlex')
+        }
+        });
+
+               
+        function handlePriceChange(selectElement) {
+            const selectedValue = selectElement.value;
+
+            console.log(selectedValue)
+            doctorsArea.forEach((gr) => {
+                if(selectedValue == 'htl') {
+                    gr.style.flexDirection = 'row'
+                } else {
+                    gr.style.flexDirection = 'row-reverse'
+                }
+            })
+        }
+        
+        
+            // Email Sub Noti
+        let subBtn = document.getElementById('subBtn');
+        let emailSub = document.getElementById('emailSub');
+        let emailSubClose = document.getElementById('emailSubClose');
+
+        subBtn.addEventListener('click', () => {
+        emailSub.style.display = 'flex'
+        })
+
+        emailSubClose.addEventListener('click', () => {
+        emailSub.style.display = 'none'
+        })
+    </script>
+</html>

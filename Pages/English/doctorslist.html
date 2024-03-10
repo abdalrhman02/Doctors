@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inner Peace - Our Doctors</title>
+        <link rel="icon" href="../../Images/logo.png">
+        <link rel="stylesheet" href="../../Styles/global-rules.css">
+        <link rel="stylesheet" href="../../Styles/home.css">
+        <link rel="stylesheet" href="../../Styles/doctorsList.css">
+
+        <style>
+            .container {
+                flex-wrap: wrap;
+            }
+        </style>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="left">
+                    <div class="logo">
+                        <img src="../../Images/logo.png" />
+                    </div>
+    
+                    <nav>
+                        <ul>
+                            <a href="../../index.html"><li>Home</li></a>
+                            <a href="doctorslist.html"><li>Doctors</li></a>
+                            <a href="diseases.html"><li>Spread Diseases</li></a>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <div class="right">
+                    <div class="changeLang">
+                        <img src="../../Images/icons/global.png" id="langIcon" />
+                        <div class="langs disNone" id="langs">
+                            <a href="#"><button>English</button></a>
+                            <a href="../Hebrew/doctorslist.html"><button>עִברִית</button></a>
+                        </div>
+                    </div>
+    
+                    <a href="login.html"><button class="signinBtn btn">Sign in</button></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="doctors">
+            
+            <div class="title">
+                <h2>Doctors currently available</h2>
+                <p>Contact one of the doctors of your choice and enjoy a comfortable treatment journey</p>
+            </div>
+
+            <div class="options">
+                <div class="area">
+                    <h3>Choose your area:</h3>
+                    <select id="areas" onchange="handleChangeArea(this)">
+                        <option value="north">Northern District</option>
+                        <option value="haifa">Haifa District</option>
+                        <option value="central">Central District</option>
+                        <option value="telaviv">Tel Aviv District</option>
+                        <option value="jerusalem">Jerusalem District</option>
+                    </select>
+                </div>
+
+                <div class="price">
+                    <h3>Price:</h3>
+                    <select id="price" onchange="handlePriceChange(this)">
+                        <option value="htl">Higher To Lower</option>
+                        <option value="lth">Lower To Higher</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="container">
+
+                <div class="doctorsInAreas">
+                    <div class="north dGroup">
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor3.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">Dr.Basma</h3>
+                                <h4 class="place">Akko - Karmi’el Region</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                </div>
+        
+                                <a href="../English/DoctorsPages/Doctor3.html"><button class="btn">More</button></a>
+                            
+                                <div class="session">
+                                    <p>Session</p>
+                                    <h4><p>35</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor1.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">Dr.Ahmed</h3>
+                                <h4 class="place">Akko - Nahariyya Region</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                </div>
+        
+                                <a href="../English/DoctorsPages/Doctor1.html"><button class="btn">More</button></a>
+                            
+                                <div class="session">
+                                    <p>Session</p>
+                                    <h4><p>50</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor2.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">Dr.Salem</h3>
+                                <h4 class="place">Yizre'el -  Nazareth-Tir’an</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                </div>
+        
+                                <a href="../English/DoctorsPages/Doctor2.html"><button class="btn">More</button></a>
+                            
+                                <div class="session">
+                                    <p>Session</p>
+                                    <h4><p>60</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="haifa dGroup">              
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor4.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">Dr.Khaled</h3>
+                                <h4 class="place">Hadera - Hadera Region</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                </div>
+        
+                                <a href="#"><button class="btn">More</button></a>
+                            
+                                <div class="session">
+                                    <p>Session</p>
+                                    <h4><p>45</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor5.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">Dr.Manal</h3>
+                                <h4 class="place">Haifa -  Haifa Region</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/white-star.png" />
+                                </div>
+        
+                                <a href="#"><button class="btn">More</button></a>
+                            
+                                <div class="session">
+                                    <p>Session</p>
+                                    <h4><p>50</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="central dGroup">
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor6.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">Dr.Mohammed</h3>
+                                <h4 class="place">Ramla</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                </div>
+        
+                                <a href="#"><button class="btn">More</button></a>
+                            
+                                <div class="session">
+                                    <p>Session</p>
+                                    <h4><p>50</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor7.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">Dr.Kaml</h3>
+                                <h4 class="place">Ramla</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/white-star.png" />
+                                </div>
+        
+                                <a href="#"><button class="btn">More</button></a>
+                            
+                                <div class="session">
+                                    <p>Session</p>
+                                    <h4><p>70</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor8.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">Dr.Rania</h3>
+                                <h4 class="place">Petah Tikva</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/white-star.png" />
+                                </div>
+        
+                                <a href="#"><button class="btn">More</button></a>
+                            
+                                <div class="session">
+                                    <p>Session</p>
+                                    <h4><p>80</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="telaviv dGroup">
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor9.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">Dr.Donia</h3>
+                                <h4 class="place">Ramat Gan Region</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                </div>
+        
+                                <a href="#"><button class="btn">More</button></a>
+                            
+                                <div class="session">
+                                    <p>Session</p>
+                                    <h4><p>35</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor10.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">Dr.Jamal</h3>
+                                <h4 class="place">Tel Aviv Region</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/white-star.png" />
+                                </div>
+        
+                                <a href="#"><button class="btn">More</button></a>
+                            
+                                <div class="session">
+                                    <p>Session</p>
+                                    <h4><p>50</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="jerusalem dGroup">
+                        <div class="doctorCard">
+                            <div class="image">
+                                <img src="../../Images/Doctor11.png" />
+                            </div>
+        
+                            <div class="details">
+                                <h3 class="name">Dr.Rani</h3>
+                                <h4 class="place">Hadera - Hadera Region</h4>
+        
+                                <div class="stars">
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                    <img src="../../Images/icons/yellow-star.png" />
+                                </div>
+        
+                                <a href="#"><button class="btn">More</button></a>
+                            
+                                <div class="session">
+                                    <p>Session</p>
+                                    <h4><p>65</p>$</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="left">
+                    <h1>Inner Peace</h1>
+                    <p>כל הזכויות שמורות ל 212015739-324991892-214534802-325487650</p>
+                </div>
+
+                <div class="right">
+                    <h3>Follow our news periodically</h3>
+                    <input type="email" placeholder="Your Email Here" />
+                    <button class="btn" id="subBtn">Send</button>
+                </div>
+            </div>
+
+            <div id="emailSub">
+                <img src="../../images/icons/close.png" id="emailSubClose"/>
+                <h2>Thank you for subscribing!</h2>
+                <p>Our news and new offers will be sent to your email periodically</p>
+            </div>
+        </footer>
+    </body>
+
+    <script>
+            // Change Language
+        let langIcon = document.getElementById('langIcon');
+        let langsDiv = document.getElementById('langs');
+
+        langIcon.addEventListener('click', () => {
+        if(langsDiv.classList.contains('disNone')) {
+            langsDiv.classList.remove('disNone')
+            langsDiv.classList.add('disFlex')
+        } else if(langsDiv.classList.contains('disFlex')) {
+            langsDiv.classList.add('disNone')
+            langsDiv.classList.remove('disFlex')
+        }
+        });
+
+
+            // Change Areas In Doctors List
+        let doctorsArea = document.querySelectorAll('.doctorsInAreas .dGroup');
+
+        doctorsArea[0].style.display = 'flex';
+
+        function handleChangeArea(selectElement) {
+            const selectedValue = selectElement.value;
+            
+            doctorsArea.forEach((gr) => {
+                if(gr.classList.contains(selectedValue)) {
+                    gr.style.display = 'flex';
+                } else {
+                    gr.style.display = 'none';
+                }
+            })
+        }
+       
+        function handlePriceChange(selectElement) {
+            const selectedValue = selectElement.value;
+
+            console.log(selectedValue)
+            doctorsArea.forEach((gr) => {
+                if(selectedValue == 'htl') {
+                    gr.style.flexDirection = 'row'
+                } else {
+                    gr.style.flexDirection = 'row-reverse'
+                }
+            })
+        }
+        
+
+            // Email Sub Noti
+        let subBtn = document.getElementById('subBtn');
+        let emailSub = document.getElementById('emailSub');
+        let emailSubClose = document.getElementById('emailSubClose');
+
+        subBtn.addEventListener('click', () => {
+        emailSub.style.display = 'flex'
+        })
+
+        emailSubClose.addEventListener('click', () => {
+        emailSub.style.display = 'none'
+        })
+    </script>
+
+
+</html>

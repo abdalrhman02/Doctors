@@ -1,0 +1,257 @@
+
+.doctor .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8em 0;
+}
+.doctorCard {
+    display: flex;
+    border: 3px solid var(--second-blue);
+    border-radius: 13px;
+}
+
+.doctorCard .image {
+    text-align: center;
+    border-radius: 8px 0 0 8px
+}
+.doctorCard .image .doctorImg {
+    border-bottom: 2px solid var(--second-blue);
+    width: 22em
+}
+.doctorCard .image .doctorName {
+    font-size: 25px;
+    margin: 6px 0;
+}
+.doctorCard .image .stars {
+    margin-bottom: 10px
+}
+.doctorCard .image .stars img {
+    width: 1.5em
+}
+
+.doctorCard .info {
+    position: relative;
+    background: var(--second-blue);
+    color: #fff;
+    width: 24em;
+    padding: 16px;
+}
+.doctorCard .info .name {
+    font-size: 24px;
+    font-weight: 700;
+}
+.doctorCard .info .quote p {
+    font-style: italic;
+    position: relative;
+    padding-left: 7px
+}
+.doctorCard .info .quote p::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background-color: var(--second-yellow);
+}
+
+.doctorCard .info .special span {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+.doctorCard .info .special h4 {
+    margin: 14px 0 8px;
+}
+.doctorCard .info .special span.spec {
+    background-color: var(--main-blue)
+}
+.doctorCard .info .special span.method {
+    background-color: var(--main-yellow)
+}
+
+.doctorCard .info div {
+    margin-top: 17px
+}
+.doctorCard .info div h3 {
+    color: var(--main-yellow);
+    margin-bottom: 4px;
+}
+.doctorCard .info div p {
+    font-size: 15px;
+}
+
+.doctorCard .info .btn {
+    background-color: #fff;
+    color: var(--second-yellow);
+    height: 2.5em;
+    padding: 0 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    margin-top: 2em
+}
+.doctorCard .info .btn:hover {
+    background-color: var(--second-yellow);
+    color: #fff;
+}
+.doctorCard .info .btn .image {
+    margin-top: 0;
+    position: relative;
+    background: var(--second-yellow);
+    width: 1.7em;
+    height: 1.7em;
+    border-radius: 50%;
+    margin-right: 7px
+}
+.doctorCard .info .btn img {
+    width: 18px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-42%, -40%);
+}
+
+.doctorCard .info .session {
+    text-align: center;
+    position: absolute;
+    top: -30px;
+    right: -34px;
+    background-color: var(--main-yellow);
+    padding: 10px;
+    border-radius: 4px;
+}
+.doctorCard .info .session p {
+    font-size: 20px;
+}
+.doctorCard .info .session h4 {
+    font-size: 20px;
+}
+
+
+.patientsOp {
+    margin-top: 5em;
+}
+.patientsOp .opinions {
+    margin-top:4em;
+    display: flex;
+    align-items: center;
+    gap: 4em
+}
+.patientsOp .opinions .opinion {
+    background-color: var(--second-blue);
+    color: #fff;
+    width: 100%;
+    height: 11em;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+.patientsOp .opinions .opinion img {
+    width: 3em;
+    margin-bottom: 7px;
+}
+.patientsOp .opinions .opinion p {
+    line-height: 1.5em;
+}
+
+.patientsOp .opinions .opinion .customerInfo {
+    position: absolute;
+    bottom: 20px;
+
+}
+.patientsOp .opinions .opinion .customerInfo .date {
+    color: rgb(196, 196, 196);
+}
+
+
+
+.book {
+    margin-top: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.book .container {
+    margin: 0;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 3em
+}
+
+.book h3 {
+    margin: 20px 0 8px;
+}
+.book .calender {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    max-width: 27em;
+}
+.book .calender span {
+    color: #fff;
+    background-color: #8d8d8d;
+    width: 2.1em;
+    height: 2.1em;
+    border-radius: 50%;
+    position: relative;
+}
+.book .calender span:hover {
+    background-color: var(--second-blue);
+    cursor: pointer;
+}
+.book .calender span p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 10px;
+    border-radius: 50%;
+}
+
+.book .time {
+    display: flex;
+    flex-direction: column;
+   
+}
+.book .time span {
+    background: #8d8d8d;
+    color: #fff;
+    margin-bottom: 18px;
+    padding: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+.book .time span:hover {
+    background-color: var(--second-blue);
+    cursor: pointer;
+}
+
+.book .btn {
+    margin-top: 20px;
+    width: 9em;
+    height: 2.2em;
+    font-size: 16px;
+}
+
+.acceptNoti {
+    display: none;
+    align-items: center;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #8dda46;
+    color: #fff;
+    position: absolute;
+    top: 9em;
+    right: -10em;
+}
+.acceptNoti img {
+    width: 1.5em;
+    margin-right: 5px
+}
+.acceptNoti p {}
